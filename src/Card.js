@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import sc, { css } from "styled-components";
 
 const ButtonContainer = sc.div`
-  display: flex;
-  justify-content: center;
   padding: 60px 30px;
 `;
 const ButtonWrapper = sc.button`
@@ -35,29 +33,6 @@ const ButtonWrapper = sc.button`
     box-shadow: 0px 2px 10px 5px #1abc9c;
     color: #000;
   }
-
-  
-  &:after {
-    content: "";
-    background: #1abc9c;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px !important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
-  }
-
-  &:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-  }
-
-  &:focus { outline:0; }
 
   &:not(:last-child){
     margin-right: 20px;
@@ -119,6 +94,18 @@ class Card extends Component {
                     <img
                         src={"https://dummyimage.com/160x40/000/fff"}
                         alt="image_button"
+                    />
+                </Button>
+                <Button type="button">
+                    <img
+                        src={"https://dummyimage.com/32x32/000/fff"}
+                        alt="32image_button"
+                    />
+                </Button>
+                <Button type="button">
+                    <img
+                        src={"https://dummyimage.com/24x24/000/fff"}
+                        alt="24image_button"
                     />
                 </Button>
             </ButtonContainer>
