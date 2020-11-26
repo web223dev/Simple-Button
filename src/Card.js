@@ -118,7 +118,7 @@ class Card extends Component {
                 <Button type="button">
                     <img
                         src={"https://dummyimage.com/160x40/000/fff"}
-                        alt="image"
+                        alt="image_button"
                     />
                 </Button>
             </ButtonContainer>
