@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import sc, { css } from "styled-components";
+import image_button1 from './images/tribunal-7610.png';
+import image_button2 from './images/user_alien.png';
+import image_button3 from './images/users_men_women.png';
 
 const ButtonContainer = sc.div`
   padding: 60px 30px;
@@ -41,6 +44,10 @@ const ButtonWrapper = sc.button`
   img{
     display: flex;
   }
+  & img.size24 {
+    width: 24px;
+    height: 24px;
+  }
 `;
 
 const TextButtonWrapper = sc(ButtonWrapper)`
@@ -50,6 +57,8 @@ const TextButtonWrapper = sc(ButtonWrapper)`
 const ImageButtonWrapper = sc(ButtonWrapper)`
   padding: 0 0;
   overflow: hidden;
+  background: transparent;
+  box-shadow: none;
 `;
 
 const Button = (props) => {
@@ -92,19 +101,40 @@ class Card extends Component {
 
                 <Button type="button">
                     <img
-                        src={"https://dummyimage.com/160x40/000/fff"}
-                        alt="image_button"
-                    />
-                </Button>
-                <Button type="button">
-                    <img
-                        src={"https://dummyimage.com/32x32/000/fff"}
+                        src={image_button1}
                         alt="32image_button"
                     />
                 </Button>
                 <Button type="button">
                     <img
-                        src={"https://dummyimage.com/24x24/000/fff"}
+                        className="size24"
+                        src={image_button1}
+                        alt="24image_button"
+                    />
+                </Button>
+                <Button type="button">
+                    <img
+                        src={image_button2}
+                        alt="32image_button"
+                    />
+                </Button>
+                <Button type="button">
+                    <img
+                        className="size24"
+                        src={image_button2}
+                        alt="24image_button"
+                    />
+                </Button>
+                <Button type="button">
+                    <img
+                        src={image_button3}
+                        alt="32image_button"
+                    />
+                </Button>
+                <Button type="button">
+                    <img
+                        className="size24"
+                        src={image_button3}
                         alt="24image_button"
                     />
                 </Button>
